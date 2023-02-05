@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		3C56565B298F6B64001A23D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56565A298F6B64001A23D6 /* AppDelegate.swift */; };
 		3C56565D298F6B64001A23D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56565C298F6B64001A23D6 /* SceneDelegate.swift */; };
-		3C56565F298F6B64001A23D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56565E298F6B64001A23D6 /* ViewController.swift */; };
 		3C565662298F6B64001A23D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C565660298F6B64001A23D6 /* Main.storyboard */; };
 		3C565664298F6B67001A23D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C565663298F6B67001A23D6 /* Assets.xcassets */; };
 		3C565667298F6B67001A23D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C565665298F6B67001A23D6 /* LaunchScreen.storyboard */; };
 		3C565672298F6B67001A23D6 /* MindteckTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C565671298F6B67001A23D6 /* MindteckTaskTests.swift */; };
 		3C56567C298F6B67001A23D6 /* MindteckTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56567B298F6B67001A23D6 /* MindteckTaskUITests.swift */; };
 		3C56567E298F6B67001A23D6 /* MindteckTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56567D298F6B67001A23D6 /* MindteckTaskUITestsLaunchTests.swift */; };
+		3C56568B298F6BBB001A23D6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56568A298F6BBB001A23D6 /* MainViewController.swift */; };
+		3C56568D2990101D001A23D6 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56568C2990101D001A23D6 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		3C565657298F6B64001A23D6 /* MindteckTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindteckTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C56565A298F6B64001A23D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C56565C298F6B64001A23D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3C56565E298F6B64001A23D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3C565661298F6B64001A23D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C565663298F6B67001A23D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C565666298F6B67001A23D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		3C565677298F6B67001A23D6 /* MindteckTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindteckTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C56567B298F6B67001A23D6 /* MindteckTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindteckTaskUITests.swift; sourceTree = "<group>"; };
 		3C56567D298F6B67001A23D6 /* MindteckTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindteckTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3C56568A298F6BBB001A23D6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3C56568C2990101D001A23D6 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 			children = (
 				3C56565A298F6B64001A23D6 /* AppDelegate.swift */,
 				3C56565C298F6B64001A23D6 /* SceneDelegate.swift */,
-				3C56565E298F6B64001A23D6 /* ViewController.swift */,
 				3C565660298F6B64001A23D6 /* Main.storyboard */,
+				3C56568A298F6BBB001A23D6 /* MainViewController.swift */,
 				3C565663298F6B67001A23D6 /* Assets.xcassets */,
 				3C565665298F6B67001A23D6 /* LaunchScreen.storyboard */,
 				3C565668298F6B67001A23D6 /* Info.plist */,
+				3C56568C2990101D001A23D6 /* MainViewModel.swift */,
 			);
 			path = MindteckTask;
 			sourceTree = "<group>";
@@ -258,9 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C56565F298F6B64001A23D6 /* ViewController.swift in Sources */,
 				3C56565B298F6B64001A23D6 /* AppDelegate.swift in Sources */,
 				3C56565D298F6B64001A23D6 /* SceneDelegate.swift in Sources */,
+				3C56568B298F6BBB001A23D6 /* MainViewController.swift in Sources */,
+				3C56568D2990101D001A23D6 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
